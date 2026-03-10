@@ -1,0 +1,21 @@
+Column Name          Data Type        Notes
+─────────────────────────────────────────────
+id                   BIGINT           Primary Key, Auto Increment
+name                 VARCHAR(100)     Full name
+email                VARCHAR(150)     Unique
+password             VARCHAR(255)     Plain text for now
+role                 VARCHAR(20)      CANDIDATE/EMPLOYER/RECRUITER
+created_at           DATETIME         Auto timestamp
+
+
+
+Column Name          Data Type        Notes
+─────────────────────────────────────────────
+id                   BIGINT           Primary Key, Auto Increment
+title                VARCHAR(150)     Job title
+description          TEXT             Job description
+location             VARCHAR(100)     City or Remote
+salary_range         VARCHAR(50)      Example: 3LPA-5LPA
+status               VARCHAR(20)      OPEN / CLOSED
+employer_id          BIGINT           Foreign Key → users.id
+created_at           DATETIME         Auto timestamp
