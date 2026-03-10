@@ -1,0 +1,1 @@
+// JobDetailPage.jsx
