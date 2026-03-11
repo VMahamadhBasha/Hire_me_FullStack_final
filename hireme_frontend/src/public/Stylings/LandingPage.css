@@ -1,0 +1,99 @@
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(to right,#e0f2fe,#eef2ff);
+}
+
+.hero h1{
+font-size:48px;
+color:#111;
+}
+
+.highlight{
+color:#2563eb;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+color:#555;
+}
+
+.searchBox{
+margin-top:30px;
+}
+
+.searchBox input{
+padding:12px;
+margin:10px;
+width:250px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.searchBox button{
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:60px;
+}
+
+.stat h2{
+font-size:32px;
+}
+
+.features{
+text-align:center;
+padding:80px 20px;
+}
+
+.featureContainer{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.feature{
+background:#f3f4f6;
+padding:30px;
+border-radius:10px;
+width:250px;
+}
+
+.cta{
+text-align:center;
+padding:80px;
+background:#2563eb;
+color:white;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btnPrimary{
+background:white;
+color:#2563eb;
+padding:12px 25px;
+border-radius:6px;
+border:none;
+margin:10px;
+}
+
+.btnOutline{
+background:transparent;
+border:2px solid white;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+}
