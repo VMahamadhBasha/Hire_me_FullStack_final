@@ -1,21 +1,14 @@
-import { BrowserRouter, Routes,Route } from "react-router-dom";
-import LoginPage from "../public/LoginPage";
-import RegisterPage from "../public/RegisterPage";
-import LandingPage from "../public/LandingPage";
-
+import { Routes, Route } from "react-router-dom";
+import LoginPage from "../pages/public/LoginPage";
+import RegisterPage from "../pages/public/RegisterPage";
+import LandingPage from "../pages/public/LandingPage";
 
 export default function AppRoutes() {
-    return(
-        <>
-        <BrowserRouter>
-        <Routes>
-            <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/" element={<LandingPage/>} />
-            <Route path="/register" element={<RegisterPage/>}/>
-           
-        </Routes>
-        </BrowserRouter>
-        
-        </>
-    )
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
+  );
 }

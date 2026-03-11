@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import "./LandingPage.css";
-
+import "./Stylings/LandingPage.css";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/Navbar";
 function LandingPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [locationQuery, setLocationQuery] = useState("");
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -14,6 +16,9 @@ function LandingPage() {
   };
 
   return (
+    <>
+    <Navbar/>
+    
     <div>
       {/* Hero Section */}
       <section className="hero">
@@ -85,11 +90,13 @@ function LandingPage() {
         <h2>Ready to Take the Next Step?</h2>
         <p>Join thousands of job seekers today.</p>
         <div className="buttons">
-          <button className="btnPrimary">Create Free Account</button>
-          <button className="btnOutline">Browse Jobs</button>
+          <button className="btnPrimary" onClick={() => navigate("/register")}>Create Free Account</button>
+          <button className="btnOutline" onClick={() => navigate("/jobs")}>Browse Jobs</button>
         </div>
+        
       </section>
     </div>
+    </>
   );
 }
 
