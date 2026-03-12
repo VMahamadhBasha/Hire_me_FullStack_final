@@ -1,0 +1,78 @@
+.apps{
+padding:30px;
+font-family:Arial, sans-serif;
+background:#f5f7f8;
+min-height:100vh;
+}
+
+.apps h2{
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+background:white;
+border-radius:10px;
+border-collapse:collapse;
+overflow:hidden;
+box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+th,td{
+padding:14px;
+text-align:left;
+border-bottom:1px solid #eee;
+}
+
+th{
+background:#f3f4f6;
+font-weight:600;
+}
+
+tr:hover{
+background:#fafafa;
+}
+
+/* Status badges */
+
+.status{
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:500;
+display:inline-block;
+}
+
+.pending{
+background:#fef3c7;
+color:#92400e;
+}
+
+.reviewing{
+background:#dbeafe;
+color:#1e40af;
+}
+
+.interview{
+background:#ede9fe;
+color:#5b21b6;
+}
+
+.rejected{
+background:#fee2e2;
+color:#991b1b;
+}
+
+.hired{
+background:#dcfce7;
+color:#065f46;
+}
+
+/* Dropdown */
+
+select{
+padding:6px 10px;
+border-radius:6px;
+border:1px solid #ccc;
+cursor:pointer;
+}

@@ -1,0 +1,27 @@
+.post-job{
+padding:30px;
+background:#f5f7f8;
+font-family:Arial;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:600px;
+}
+
+input,select,textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+background:#4f46e5;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+}
