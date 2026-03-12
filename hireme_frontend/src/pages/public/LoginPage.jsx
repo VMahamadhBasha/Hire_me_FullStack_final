@@ -63,7 +63,7 @@ export default function LoginPage() {
 
     // Navigate based on role
     if (user.role === "jobseeker") {
-      navigate("/jobs");
+      navigate("/");
     } else if (user.role === "employer") {
       navigate("/employer-dashboard");
     } else if (user.role === "recruiter") {
